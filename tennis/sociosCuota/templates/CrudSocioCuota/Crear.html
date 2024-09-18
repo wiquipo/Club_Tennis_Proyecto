@@ -1,0 +1,45 @@
+{% extends 'paginas_base/base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block titulo %}Página Nueva Cuota Socio{% endblock titulo %}
+{% block contenido %}
+    <div class="bg-success-subtle p-2 text-white">
+        <div class="card-header">
+            Crear Nueva Cuota socio
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Socio</h4>
+            <form action="" method="post"  enctype="multipart/form-data" autocomplete="off">
+                {% csrf_token %}
+               
+                {{formulario.DNI|as_crispy_field}}
+                {{formulario.nom|as_crispy_field}}
+                {{formulario.fechaMes|as_crispy_field}}
+                {{formulario.fechap|as_crispy_field}}
+                {{formulario.tel|as_crispy_field}}
+                {{formulario.imp|as_crispy_field}}
+              
+
+             
+           
+                <br>
+             
+              
+            <br>
+            <input name="btn-guardar" id="btn_guardar" class="btn btn-success border border-dark" type="submit" value="Guardar">
+            <a name="btnCancelar" id="btnCancelar" class="btn btn-primary border-dark" href="{% url 'listaSocioCuota' %}" role="button">Cancelar</a>
+
+            </form>           
+            
+            
+        </div>
+        <div class="card-footer text-muted">
+            
+        </div>
+    </div>
+    
+   
+   
+
+{% endblock contenido %}

@@ -1,0 +1,48 @@
+{% extends 'paginas_base/base.html' %}
+
+{% block titulo %}Página Lista de Servicios {% endblock titulo %}
+{% block contenido %}
+    <div class="card">
+        <div class="card-header">
+            <a name="btnuevo" id="btnuevo" class="btn btn-primary" href="{% url 'crear_editarServicio' idServicio=0  %}" role="button">Nuevo Servicio</a>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Servicios</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Código de Servicio</th>
+                        <th>Descripcion</th>
+                        <th>Costo</th>
+                                           
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for s in servicio %}
+                    <tr>  
+                      
+                                  
+                        <td>{{ s.descripcion }}</td>
+                        <td>{{ s.costo}}</td>
+                                  
+                     
+                        <td>
+                            <a name="bteditar" id="bteditar" class="btn btn-info" href="{% url 'crear_editarServicio' s.idServicio  %}" role="button">Editar</a>
+                            <a name="bteliminar" id="bteliminar" class="btn btn-danger" href="{% url 'eliminarS' s.idServicio  %}" role="button">Eliminar</a>
+                        </td>                        
+                    </tr>
+                    {% endfor %}
+                    
+                </tbody>
+            </table>
+            
+            
+        </div>
+        <div class="card-footer text-muted">
+        
+        </div>
+    </div>
+   
+   
+
+{% endblock contenido %}

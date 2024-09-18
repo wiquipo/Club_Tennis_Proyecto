@@ -1,0 +1,35 @@
+{% extends 'paginas_base/base.html' %}
+{% load crispy_forms_tags %}
+{% block titulo %}Página Nuevo Servicio{% endblock titulo %}
+{% block contenido %}
+    <div class="bg-success-subtle p-2 text-white">
+        <div class="card-header"> Crear Nuevo servicio
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Servicio</h4>
+            <form action="" method="post"  enctype="multipart/form-data" autocomplete="off">
+                {% csrf_token %}
+          
+            
+                {{formulario.descripcion|as_crispy_field}}
+                {{formulario.costo|as_crispy_field}}
+                          
+                <br>
+                           
+            <br>
+            <input name="btn-guardar" id="btn_guardar" class="btn btn-success border border-dark" type="submit" value="Guardar">
+            <a name="btnCancelar" id="btnCancelar" class="btn btn-primary border-dark" href="{% url 'listaServicio' %}" role="button">Cancelar</a>
+
+            </form>           
+            
+            
+        </div>
+        <div class="card-footer text-muted">
+            
+        </div>
+    </div>
+    
+   
+   
+
+{% endblock contenido %}

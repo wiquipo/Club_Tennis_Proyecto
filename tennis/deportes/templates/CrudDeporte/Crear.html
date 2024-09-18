@@ -1,0 +1,39 @@
+{% extends 'paginas_base/base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block titulo %}Página Nuevo Deportes{% endblock titulo %}
+{% block contenido %}
+    <div class="bg-success-subtle p-2 text-white">
+        <div class="card-header">
+            Crear Nuevo Deportes
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Deportes</h4>
+            <form action="" method="post"  enctype="multipart/form-data" autocomplete="off">
+                {% csrf_token %}
+               
+               
+                {{formulario.nombre|as_crispy_field}}
+                {{formulario.idCategoria|as_crispy_field}}
+                {{formulario.horario|as_crispy_field}}
+                     
+                <br>
+                          
+            <br>
+            <input name="btn-guardar" id="btn_guardar" class="btn btn-success border border-dark" type="submit" value="Guardar">
+            <a name="btnCancelar" id="btnCancelar" class="btn btn-primary border-dark" href="{% url 'listaD' %}" role="button">Cancelar</a>
+
+            </form>           
+            
+            
+        </div>
+        <div class="card-footer text-muted">
+            
+        </div>
+    </div>
+    
+   
+   
+
+{% endblock contenido %}

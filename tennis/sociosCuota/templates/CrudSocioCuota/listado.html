@@ -1,0 +1,56 @@
+{% extends 'paginas_base/base.html' %}
+
+{% block titulo %}Página Lista Cuota de Socios {% endblock titulo %}
+{% block contenido %}
+    <div class="card">
+        <div class="card-header">
+            <a name="btnuevo" id="btnuevo" class="btn btn-primary" href="{% url 'crear_editarSocioCuota' id=0  %}" role="button">Nuevo Socio</a>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Socios</h4>
+            <h2 style="color: black;">Total Importe Socios: ${{ total_importe_socios }}</h2>
+            <h4 style="color: black;">Suma Total: ${{ suma_total }}</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                    
+                        <th>DNI</th>
+                        <th>Nombre</th>
+                        <th>Pago correspondiente Mes</th>                       
+                        <th>Fecha Pago</th>
+                        <th>Telefono</th>
+                        <th>Importe</th>      
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for ju in socios %}
+                    <tr>
+                                       
+                        <td>{{ ju.DNI}}</td>
+                        <td>{{ ju.nom}}</td>
+                        <td>{{ ju.fechaMes}}</td>
+                        <td>{{ ju.fechap }}</td>
+                        <td>{{ ju.tel}}</td>
+                        <td>{{ ju.imp}}</td>
+                   
+                       <td>
+                            <a name="bteditar" id="bteditar" class="btn btn-info" href="{% url 'crear_editarSocioCuota' ju.id  %}" role="button">Editar</a>
+                            <a name="bteliminar" id="bteliminar" class="btn btn-danger" href="{% url 'eliminar' ju.id  %}" role="button">Eliminar</a>
+                        </td>                        
+                    </tr>
+                    {% endfor %}
+                    
+                </tbody>
+            </table>
+            
+            
+        </div>
+        <div class="card-footer text-muted">
+        
+        </div>
+    </div>
+   
+   
+
+{% endblock contenido %}
