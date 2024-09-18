@@ -1,20 +1,23 @@
 # Django-Crud
 .
 # ClubTennis
-REQUERIMIENTO:
+REQUERIMIENTO: SOCIOS
 
 
 
-DIAGRAMA ENTIDAD RELACIÓN:
+DIAGRAMA ENTIDAD RELACIÓN: 
+https://lucid.app/lucidchart/b86290bb-721b-49da-8abc-c5012e41a28d/edit?invitationId=inv_28414404-514d-4c53-95ef-a977d6c66d3f&page=0_0#
 
 
-HISTORIA DE USUARIO:
+HISTORIA DE USUARIO: 
+https://docs.google.com/document/d/1UjhDVZ8gojcaNzZ_4QPGg_l3PAC8aK-EDcHTKE_SEG8/edit
 
 
-CASOS DE USO:
+CASOS DE USO: 
+https://lucid.app/lucidchart/69f7b4a0-7719-41a4-8ece-ec5f7fde57a6/edit?invitationId=inv_c4854e0f-8105-4d71-9359-a77d8b20bb36&page=0_0#
 
 
-CASOS DE PRUEBA:
+CASOS DE PRUEBA: 
 
 
 ATRIBUTOS DE CASOS DE USO:
