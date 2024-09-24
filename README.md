@@ -1,7 +1,8 @@
 # Django-Crud
 .
 # ClubTennis
-REQUERIMIENTO:
+REQUERIMIENTO: 
+https://docs.google.com/document/d/1tNAIJhPpxDaELXBpCqODNabUGgnAhhoTMF5_zqfEB_4/edit?usp=sharing
 
 
 
