@@ -32,6 +32,8 @@ https://docs.google.com/document/d/116jJHkeE0eTjDU_lDM2xlUW1IrKLgurUI6GMMxEHFdY/
 
 
 DESARROLLO PROYECTO EN DJANGO:
+https://docs.google.com/document/d/1KNuAtxqXS7xznIX9QIJVS89vszteCqjFX47SomXobnc/edit?usp=sharing
+
 *proyecto gral
 setting.py
 urls
@@ -47,10 +49,12 @@ listado.html
 
 
 BASE DE DATOS:
+https://docs.google.com/document/d/11xoYO8RHXEO2BJh3WMiUybqQQtWQwzj-0Xvnbb4i_D0/edit?usp=sharing
 phpMyAdmin
 
 
 PRUEBAS FUNCIONALES BAJO SELENIUM:
+https://docs.google.com/document/d/1duyfRv58rjCQ7n1TCftjvs8an2wuNEzgSFvXAkp8cjM/edit
 
 
 
