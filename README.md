@@ -59,6 +59,7 @@ https://docs.google.com/document/d/1duyfRv58rjCQ7n1TCftjvs8an2wuNEzgSFvXAkp8cjM/
 
 
 PRUEBAS DE PERFOMANCE bajo BlazeMeter:
+https://docs.google.com/document/d/1FwOoJPgYcoRAUZ4b7QLjcR5u482GacwqaeNTtECBQaw/edit?tab=t.0
 
 
 
